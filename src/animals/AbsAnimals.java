@@ -1,10 +1,10 @@
 package animals;
 
 public abstract class AbsAnimals {
-   public String name;
-   public int age;
-   public int weight;
-   public String color;
+   private String name;
+   private int age;
+   private int weight;
+   private String color;
 
 
 
@@ -54,7 +54,7 @@ public abstract class AbsAnimals {
     }
 
     public String toString() {
-       return String.format("Привет! меня зовут %s, мне %d %s, я вешу - %d кг, мой цвет - %s.", name, age, getYearCorrect(age), weight, color);
+       return String.format("Привет! меня зовут %s, мне %d %s, я вешу  %d кг, мой цвет  %s.", name, age, getYearCorrect(age), weight, color);
     }
 
     private  String getYearCorrect (int age) {
